@@ -47,6 +47,11 @@ input:focus {
   border: 1px solid lightgrey;
 }
 
+.inputError {
+  outline: none;
+  border: 1px solid rgba(225, 4, 4, 0.273);
+}
+
 label {
   width: 100%;
   font-weight: 300;
