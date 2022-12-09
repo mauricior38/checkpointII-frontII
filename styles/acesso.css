@@ -49,7 +49,11 @@ input:focus {
 
 .inputError {
   outline: none;
-  border: 1px solid rgba(225, 4, 4, 0.273);
+  border: 2px solid rgba(225, 4, 4, 0.361);
+}
+
+.inputDisabled{
+  background-color: #f95f5f61;
 }
 
 label {
@@ -69,13 +73,20 @@ button {
   font-size: 1em;
 }
 
+.blocked{
+  background-color: rgba(128, 128, 128, 0.788);
+  cursor: default;
+}
+
 .form-header {
   color: grey;
   font-size: 2em;
 }
+
 .ingressar{
   text-align: center;
 }
+
 .left{
   width: 50%;  
   background-color: white;
@@ -93,4 +104,32 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.loader {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: block;
+  margin:5px auto;
+  position: relative;
+  background: #FFF;
+  box-shadow: -24px 0 #FFF, 24px 0 #FFF;
+  box-sizing: border-box;
+  animation: shadowPulse 2s linear infinite;
+}
+
+@keyframes shadowPulse {
+  33% {
+    background: #FFF;
+    box-shadow: -24px 0 var(--primary), 24px 0 #FFF;
+  }
+  66% {
+    background: var(--primary);
+    box-shadow: -24px 0 #FFF, 24px 0 #FFF;
+  }
+  100% {
+    background: #FFF;
+    box-shadow: -24px 0 #FFF, 24px 0 var(--primary);
+  }
 }

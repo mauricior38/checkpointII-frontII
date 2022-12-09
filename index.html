@@ -14,28 +14,33 @@
   
 </head>
 
-<body onload="isLogged()">
+<body>
   <div class="left">
     <img src="./assets/pessoa-login.png" alt="">
   </div>
   
   <div class="right">
     
-    <form>
+    <form id="form">
       <div class="form-header">
         <p>To-Do App</p>
       </div>
       <h1>Acessar</h1>
-      <label>
+      <label id="labelEmail">
         Email:
-        <input type="email" id="inputEmail" required>
+        <input type="text" id="inputEmail" enable="false">
+
       </label>
+
       <label>
         Senha:
-        <input id="inputPassword" type="password">
+        <input type="password" id="inputPassword" enable="false">
       </label>
       
-      <button type="button" id="btnsb" disbled>Acessar</button>      
+      <button type="submit" id="btn" class="blocked">
+      </button>
+
+      
     </form>
     
     <div class="ingressar">
