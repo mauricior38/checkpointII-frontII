@@ -21,26 +21,29 @@
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+  <script src="./scripts/utils.js" defer></script>
+  <script src="./scripts/tarefas/index.js" defer ></script>
+
 
   <title>To-Do App</title>
 </head>
 
-<body onload="isLogged()">
+<body>
   <header>
     <nav>
       <a href="#">Tarefas</a>
     </nav>
 
     <div class="user-info">
-      <p>Nome usuário</p>
-      <div class="user-image"></div>
-      <button type="button" id="closeApp">Finalizar sessão</i>
-      </button>
+      <div class="user-info" id="user-info">
+        <p id="userName"></p>
+      <button type="button" id="closeApp">Finalizar sessão</i></button>
+      </div>
     </div>
   </header>
 
 
-  <form class="nova-tarefa">
+  <form class="nova-tarefa" id="tarefaForm">
     <div class="not-done "></div>
     <input id="novaTarefa" type="text" placeholder="Nova tarefa">
     <button type="submit">
@@ -50,29 +53,8 @@
 
 
   <ul class="tarefas-pendentes">
-    <div>
+    <div id="tarefas-pendentes"> 
     <!-- <div id="skeleton"> -->
-      <li class="tarefa">
-        <div class="not-done"></div>
-        <div class="descricao">
-          <p class="nome">Nova tarefa</p>
-          <p class="timestamp">Criada em: 15/07/21</p>
-        </div>
-      </li>
-      <li class="tarefa">
-        <div class="not-done"></div>
-        <div class="descricao">
-          <p class="nome">Nova tarefa</p>
-          <p class="timestamp">Criada em: 15/07/21</p>
-        </div>
-      </li>
-      <li class="tarefa">
-        <div class="not-done"></div>
-        <div class="descricao">
-          <p class="nome">Nova tarefa</p>
-          <p class="timestamp">Criada em: 15/07/21</p>
-        </div>
-      </li>
 
     </div>
   </ul>
@@ -83,8 +65,18 @@
   </ul>
 
 
-  <script src="./scripts/utils.js"></script>
-  <script src="./scripts/tarefas/index.js"></script>
+
 </body>
 
 </html>
+
+
+ <!-- <div id="tarefas-pendentes"> -->
+    <!-- <div id="skeleton"> -->
+      <!-- <li class="tarefa">
+        <div class="not-done"></div>
+        <div class="descricao">
+          <p class="nome">Nova tarefa</p>
+          <p class="timestamp">Criada em: 15/07/21</p>
+        </div>
+      </li> -->
