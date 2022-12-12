@@ -120,6 +120,11 @@ async function loginApi(userData) {
     } else {
       throw login;
     }
+    
+    if(login.status == 404){
+      alert("Error")
+    }
+
   } catch (error) {
     if (error.status === 404 || error.status === 400) {
       alert("Email ou senha inválidos.");
