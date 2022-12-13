@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
 
 :root {
-  --primary: #d3944ce7;
+  --primary: #e4702eea;;
   --secondary: #9709cf;
   --app-grey: #c0bebd;
 }
@@ -19,6 +19,6 @@ body {
 
 button {
   border: none;
-  border-radius: 3px;
+  border-radius: 15px;
   cursor: pointer;
 }

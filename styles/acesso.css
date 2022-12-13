@@ -77,6 +77,10 @@ button {
   font-size: 1em;
 }
 
+button:hover {
+  background-color: rgba(247, 62, 6, 0.637);
+}
+
 .blocked{
   background-color: rgba(128, 128, 128, 0.788);
   cursor: default;
