@@ -24,8 +24,9 @@ async function isLogged() {
     let respostaTasks = await fetch(`${baseUrl()}/tasks`, configReq);
     let respostaTasksJs = await respostaTasks.json();
 
-    respostaTasksJs.forEach((e) => {
+    skeleton(respostaTasksJs)
 
+    respostaTasksJs.forEach((e) => {
       if (e.completed == false) {
         let liTarefas = document.createElement("li");
         liTarefas.classList.add("tarefa");
@@ -57,7 +58,11 @@ async function isLogged() {
   } else if (isLogged === null) {
     window.location.href = "./index.html";
   }
+
+  skeleton(false);
 }
+
+
 
 function userGetMe(userData) {
   const userNameText = document.getElementById("userName");
@@ -103,6 +108,7 @@ async function novaTarefa(desc) {
   try {
     let resposta = await fetch(`${baseUrl()}/tasks`, requestTask);
     let respostaTask = await resposta.json();
+    
 
     if (resposta.status == 201) {
       console.log("Criado com sucesso");
@@ -116,7 +122,6 @@ async function novaTarefa(desc) {
 }
 
 async function statusTarefa(id, status) {
-  
   if (status) {
     let requestTask = {
       method: "PUT",
@@ -196,3 +201,10 @@ async function deletaTarefa(id) {
   }
 }
 
+function skeleton() {
+
+  setTimeout(function () {
+    document.getElementById("skeleton").removeAttribute("id")
+}, 1500);
+
+}
