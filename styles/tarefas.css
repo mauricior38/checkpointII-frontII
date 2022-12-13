@@ -39,7 +39,7 @@ a {
 #closeApp{
   margin-left: 15px;
   font-size: .7em;
-  background-color: rgb(218, 88, 88);
+  background-color: rgb(247, 62, 6);
   color: white;
   border-radius: 50vh;
   padding: 5px 10px;
@@ -76,7 +76,7 @@ a {
 }
 
 .nova-tarefa input::placeholder {
-  color: rgb(197, 197, 197);
+  color: rgb(134, 133, 133);
   text-indent: .2em;
 }
 
@@ -174,7 +174,7 @@ a {
 }
 
 .tarefa .nome {
-  color: rgb(95, 95, 95);
+  color: rgb(66, 65, 65);
 }
 
 .tarefa .timestamp {
@@ -184,12 +184,12 @@ a {
 
 .btnExcluir{
   padding: 5px 10px;
-  background-color: rgb(218, 88, 88);
+  background-color: rgb(247, 62, 6);
   color: #FFF;
 }
 
 .btnExcluir:hover{
-  background-color: rgb(228, 119, 119);
+  background-color: rgba(247, 62, 6, 0.637);
 }
 /* Tarefas terminadas ----------------------------------------------------------- */
 

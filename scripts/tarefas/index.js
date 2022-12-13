@@ -195,3 +195,4 @@ async function deletaTarefa(id) {
     }
   }
 }
+
